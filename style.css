@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Libre Franklin', sans-serif;
+    background-image: url('tste1.svg');
     
 
 }
@@ -29,13 +30,6 @@ nav{
     justify-content: space-around;
 
 }
-/* .banner{
-    background-image: url("banner.jpg");
-    height: 90vh;
-    background-size: cover;
-    object-fit: cover;
-} */
-
 .banner {
 
     height: 85vh;
@@ -48,12 +42,6 @@ nav{
     width: 100%;
     box-shadow: 0px 5px 55px 0px rgba(51,51,51,0.28); 
 }
-
-
-/* .banner img {
-    height: 85vh;
-    width: 100%;
-} */
 
 .section_from{
     background-image: url('section-grey.jpg');
@@ -75,18 +63,6 @@ left: 473px;
 top: 56px;
 
 }
-
-
-/* teste */
-@import url('https://fonts.googleapis.com/css?family=Cantata+One');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-html {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-}
-
-
 
 /* CARD STYLING */
 
@@ -138,10 +114,6 @@ html {
 
 
 
-.card_back {
-/*   display: none; */
-  padding: 1em;
-}
 
 .card_front > *,
 .card_back > * {
@@ -156,33 +128,13 @@ html {
 
 
 
-/* FLIP CARD STYLING */
 
-
-.card {
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-.card_front,
-.c {
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.card_front {
-  z-index: 2;
-  transform: rotateY(0deg);
-}
 
 
 
   .section_talk{
-      background-image: url('teste.png');
-      height: auto;
+      background-image: url('tste1.svg');
+      height: 30vw;
     width: 100%;
    background-size: cover;
   }
@@ -202,12 +154,12 @@ html {
 
   .title_talk h2 {
       text-transform: uppercase;
-      color: white;
+      color: black;
   }
 
   .text_talk{
       font-size: 20px;
-      color: white;
+      color: black;
       width: 72%;
       margin-top: 7vh;
 
@@ -226,6 +178,7 @@ html {
   .imgs_icons{
     display: flex;
     justify-content: space-around;
+    margin-top: 3vw;
   }
  .icons-texts_talks{
     display: flex;
@@ -237,52 +190,62 @@ html {
     justify-content: space-around;
  }
 
+ .btn{
+    background-color: #fa496e;
+    color: white;
+    padding: 10px;  
+    border-radius: 10px;
+    
+ }
+
+ .btn_talk{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vw;
+
+ }
 
 
+ .gradient {
+    position: absolute;
+    z-index: -1;
+    width: 90vw;
+    background: #e4e4e4;
+    left: 5vw;
+    height: 100%;
+}
 
-
-
- #gradient {
-    background: #eaead5;
-    background-image: linear-gradient(#FF0000 20%, #FFFF00 20%, #FFFF00 40%,#008000 40%, #008000 60%, #0000FF 60%, #0000FF 80%, #8B008B 80%);
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 100%;
-    height: 334px;
-
-  }
-  
-  #gradient:after {    
+.gradient:after {    
     content: "";
     position: absolute;
-    background: #e4e4e4;
-    left: 5%;
-    margin-top: -67.5px;
-    border-radius: 5px;
-    width: 90%;
-    
-    height: -webkit-fill-available;
-
-    z-index: -1;
-
+    background-image: linear-gradient(#FF0000 20%, #FFFF00 20%, #FFFF00 40%,#008000 40%, #008000 60%, #0000FF 60%, #0000FF 80%, #8B008B 80%);
+    height: 300px;
+    width: 100vw;
+    left: -5vw;
+    margin-top: 90px;
+    z-index: -2;
   }
   
-  #card1 {
-      
+  .card1 {      
         /* position: absolute; */
-        width: 79%;
+        width: 78%;
         height: auto;
         padding: 25px;
+        margin: auto;
         /* padding-top: 0; */
         /* padding-bottom: 0; */
         /* left: 22%; */
         /* top: 67.5px; */
-        background: #e4e4e4;
+        background: #ffffff;
         box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
         z-index: 5;
-        margin-left: 114px;
-        margin-top: -387px;
+        /* margin-left: 114px; */
+        /* margin-top: -387px; */
   }
+
+  .cardprincipal{
+    margin-top: 102px;;
+}
   
   .cardw{
     width: 79%;
@@ -295,10 +258,96 @@ html {
     background: #e4e4e4;
     box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
     z-index: 5;
-    margin-left: 114px;
-    margin-top: -387px; 
+    /* margin-left: 114px;
+    margin-top: -387px;  */
   }
 
+    .section_dados{
+        width: 82%;
+        margin: 0 auto;
+        height: 23vw;
+        background-image: url(assets/lgbtcry.jpg);
+        background-size: 181vh 84vh;
+        background-repeat: no-repeat;
+        background-position: center; 
+
+ 
+
+    }
+    .title_help{
+        display: flex;
+        align-items: center;
+        /* width: 100%; */
+        /* height: 200px; */
+        font-size: 31px;
+    
+    }
+    .img_help img {
+        height: 18vw;
+        margin-top: 20px;
+    }
+
+    .help_subtitle{
+        margin-top: 20px;
+       
+        width: 100%;
+    }
+
+    .help_main{
+        height: auto;
+    
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+
+    .card_help {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.1s;
+        width: 40%;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .card_help:hover {
+       
+          width: 42%;
+       
+    }
+    
+    .img_help {
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .container_help {
+        padding: 2px 16px;
+    }
+
+    .btn_help{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3vw;
+    }
+
+    .cards_help{
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .volunters_main{
+       
+    text-align: center;
+    }
+    .volunters_subtitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    .volunters_paragraph{
+        margin-left: 55px;
+    }
 
    /* negocio de transparente chama knoucnout css */
 
