@@ -271,6 +271,9 @@ top: 56px;
       justify-content: space-between;
       margin-top: 43px;
   }
+  .conteudo_talk_girl{
+    width: 20%;
+  }
 
   .imgs_icons{
     display: flex;
